@@ -5,6 +5,8 @@
         <title>Recipes App</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     </head>
     <body>
         <!-- Header Section -->
@@ -58,6 +60,58 @@
                 </nav>
             </div>
             <!-- End Breadcrumbs -->
+            
+            <!-- Recipes Section -->
+            <section id="blog" class="blog section-bg">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-8">
+                            
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="sidebar">
+                                <div class="sidebar-item search-form">
+                                    <h3 class="sidebar-title">Search</h3>
+                                    <form action="" class="mt-3">
+                                        <input type="text" id="recipeName">
+                                        <button type="button" onclick="rr()"><i class="bi bi-search"></i>Search</button>
+                                    </form>
+                                </div><!-- End sidebar search formn-->
+                            
+                            <div class="sidebar-item tags">
+                                <h3 class="sidebar-title">Tags</h3>
+                                <ul class="mt-3">
+                                    <li><a href="#">Recipes</a></li>
+                                    <li><a href="#">Ingredients</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Menu</a></li>
+                                    <li><a href="#">Meals</a></li>
+                                    <li><a href="#">Wines</a></li>
+                                </ul>
+                            </div><!-- End sidebar tags-->
+                            </div><!-- End Blog Sidebar -->
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Blog Details Section -->
+            
+            <!-- Recipes Welcome Section -->
+            <section id="portfolio" class="portfolio sections-bg">
+                <div class="container">
+
+                    <div class="section-header">
+                        <h2>Popular Recipes</h2>
+                        <p>Below are some of the most popular recipes trending today</p>
+                    </div>
+                    
+                    <div class="portfolio-isotope flex-column flex-wrap align-items-center" id="rec">
+                        <div class="row gy-4 portfolio-container" id="ddd">
+                            <!-- Here comes generated recipes from search bar -->
+                        </div>           
+                    </div>
+                </div>
+            </section><!-- End Portfolio Section -->
             
             <!--  Footer Section -->
             <footer id="footer" class="footer">
