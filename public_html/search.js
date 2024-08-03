@@ -13,7 +13,7 @@ const searchRecipe = () => {
     .then(response => response.json())
     .then(function(current) {
         console.log(current);
-        document.querySelector("#ddd").innerHTML = ''; // Clear previous results
+        document.querySelector("#returnRecipes").innerHTML = ''; // Clear previous results
         for(let i = 0; i < current.results.length; i++) {
             const recipe = current.results[i];
             const recipeHtml = `
@@ -37,7 +37,7 @@ const searchRecipe = () => {
                         </div>
                     </div>
                 </div>`;
-            document.querySelector("#ddd").insertAdjacentHTML('beforeend', recipeHtml);
+            document.querySelector("#returnRecipes").insertAdjacentHTML('beforeend', recipeHtml);
         }
     });
 };
@@ -66,10 +66,12 @@ const displayFavorites = () => {
                 <div class='blog-content border border-top-0 rounded-bottom p-4'>
                     <h4>${recipe.title}</h4>
                     <button class='btn btn-danger' onclick='removeFromFavorites("${recipe.id}")'>Remove</button>
+                    <br>
+                    <button class='btn btn-primary' onclick='viewRecipeDetails("${recipe.id}")'>View Details</button>
                 </div>
             </div>
         </div>`).join('');
-    document.querySelector("#ddd").innerHTML = favoritesHtml;
+    document.querySelector("#returnRecipes").innerHTML = favoritesHtml;
 };
 
 const removeFromFavorites = (recipeId) => {
