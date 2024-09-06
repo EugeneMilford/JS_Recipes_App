@@ -32,8 +32,9 @@ const searchRecipe = () => {
                             <a href='#'>Source: ${recipe.spoonacularSourceUrl}</a>
                             <br>
                             <br>
-                            <button class='btn btn-secondary' onclick='addToFavorites("${recipe.id}", "${recipe.title}", "${recipe.image}")'>Add To Favourites</button>
                             <button class='btn btn-primary' onclick='viewRecipeDetails("${recipe.id}")'>View Details</button>
+                            <br>
+                            <button class='btn btn-secondary' onclick='addToFavorites("${recipe.id}", "${recipe.title}", "${recipe.image}")'>Add To Favourites</button>
                         </div>
                     </div>
                 </div>`;

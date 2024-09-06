@@ -691,6 +691,44 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Stats Counter Section
+--------------------------------------------------------------*/
+.stats-counter {
+  padding: 40px 0;
+}
+
+.stats-counter .stats-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.stats-counter .stats-item .purecounter {
+  min-width: 90px;
+  padding-right: 15px;
+}
+
+.stats-counter .stats-item i {
+  font-size: 44px;
+  line-height: 0;
+  margin-right: 15px;
+}
+
+.stats-counter .stats-item span {
+  font-size: 40px;
+  display: block;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 40px;
+}
+
+.stats-counter .stats-item p {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
 .faq .content h3 {
